@@ -1,6 +1,6 @@
 Declare,metatab-latest
 Title,Codes for classification of Instructional Programs
-Description,
+Description,The Classification of Instructional Programs (CIP) is a taxonomic coding scheme of instructional programs. 
 Identifier,5704187f-b663-4b19-90ab-17652f4493bb
 Name,nces.ed.gov-cip-2010-1.1.1
 Dataset,cip
@@ -14,17 +14,17 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2023-10-17T20:05:45
-Modified,2023-10-17T20:05:46
-Giturl,https://github.com/CivicKnowledge/cmech_data.git
-""
+Modified,2023-10-17T20:06:33
+Giturl,https://github.com/metatab-packages/nces.ed.gov-cip-2010.git
+
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-""
+
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-""
+
 Section,References,Name,Description,
-""
+
 Section,Resources,Name,Description,
-""
+
 Section,Schema,DataType,AltName,Description
