@@ -1,11 +1,12 @@
 Declare,metatab-latest
 Title,Codes for classification of Instructional Programs
-Description,The Classification of Instructional Programs (CIP) is a taxonomic coding scheme of instructional programs. 
+Description,The Classification of Instructional Programs (CIP) is a taxonomic coding scheme
+Description,of instructional programs.
 Identifier,5704187f-b663-4b19-90ab-17652f4493bb
-Name,nces.ed.gov-cip-2010-1.1.1
+Name,nces.ed.gov-cip-2020-1.1.1
 Dataset,cip
 Origin,nces.ed.gov
-Time,2010
+Time,2020
 Space,
 Grain,
 Variant,
@@ -14,17 +15,33 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2023-10-17T20:05:45
-Modified,2023-10-17T20:06:33
+Modified,2023-10-17T23:26:03
 Giturl,https://github.com/metatab-packages/nces.ed.gov-cip-2010.git
-
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-
+Homepage,https://nces.ed.gov/ipeds/cipcode/default.aspx,Home Page,,
+Downloadpage,https://nces.ed.gov/ipeds/cipcode/resources.aspx,Download Page,,
+""
 Section,References,Name,Description,
-
+Reference,data/CIPCode2020.csv,cip_source,CIP Codes,
+Reference,data/CIP2020_SOC2018_Crosswalk.xlsx#1,xwalk_source,Crosswalk between CIP codes and SOC Occupation codes,
+""
 Section,Resources,Name,Description,
-
-Section,Schema,DataType,AltName,Description
+Datafile,notebooks/build.ipynb#cip_df,cip,CIP Codes,
+Datafile,notebooks/build.ipynb#xw_df,xwalk,CIP to SOC crosswalk,
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,cip,,,,
+Table.Column,family,integer,,,
+Table.Column,code,number,,,
+Table.Column,title,text,,,
+Table.Column,desc,text,,,
+Table,xwalk,,,,
+Table.Column,cip,number,,,
+Table.Column,cip_title,text,,,
+Table.Column,soc,text,,,
+Table.Column,soc_title,text,,,
